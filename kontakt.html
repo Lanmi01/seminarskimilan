@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta name="description" content="ChocoLand nudi najkvalitetnije čokolade: tamna, mlečna, bela, sa lešnikom, bademom, narandžom, karamelom i još mnogo toga.">
+  <meta name="keywords" content="čokolada, tamna čokolada, mlečna čokolada, bela čokolada, lešnik, badem, karamel, ChocoLand">
+  <meta name="author" content="Milan Momić">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <div class="logo">
+      <img src="slike/logo.png" alt="Logo" class="logo-img">
+      ChocoLand
+    </div>
+    <div id="hamburger-meni" class="hamburger">
+      <div class="linija"></div>
+      <div class="linija"></div>
+      <div class="linija"></div>
+    </div>
+    <nav id="navigacijaa" class="navigacija">
+      <ul>
+        <li><a href="index.html" >Početna</a></li>
+        <li class="padajuci-meni">
+        <a href="proizvodi.html">Proizvodi ▾</a>
+        <div class="pad-meni">
+          <a href="choco-tamna70.html">Tamna 70%</a>
+          <a href="choco-mlecna.html">Mlečna</a>
+          <a href="choco-bela.html">Bela</a>
+          <a href="choco-lesnik.html">Lešnik</a>
+          <a href="choco-badem.html">Badem</a>
+          <a href="choco-narandza.html">Narandža</a>
+          <a href="choco-keks.html">Sa keksom</a>
+          <a href="choco-malina.html">Malina</a>
+          <a href="choco-dubai.html">Dubai</a>
+          <a href="choco-karamela.html">Karemela</a>
+        </div>
+      </li>
+        <li><a href="onama.html">O nama</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <div class="kontrole">
+      <button onclick="changeFontSize(-2)">A-</button>
+      <button onclick="changeFontSize(2)">A+</button>
+    </div>
+
+  </header>
+
+  <section class="kontakt">
+    <h2>Kontaktirajte nas</h2>
+    <p>Imate pitanje ili komentar? Pošaljite nam poruku putem forme ispod.</p>
+    <form id="kontakt-forma" action="#" method="post">
+      <label for="ime">Ime i prezime:</label>
+      <input type="text" id="ime" name="ime" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="poruka">Poruka:</label>
+      <textarea id="poruka" name="poruka" rows="4" required></textarea>
+
+      <button type="submit">Pošalji</button>
+    </form>
+  </section>
+
+  <div class="informacije">
+    <div class="tekst-informacija">
+      <p>Gde se nalazimo:</p>
+      <p>Đure Đakovića bb</p>
+      <p>Zrenjanin</p>
+      <p>Telefon: +38163594345</p>
+      <p>E-mail: chocoland@gmail.com</p>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.476378957004!2d20.37984681540324!3d45.37956037910008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475adb6c0f745bc3%3A0x4afb4552043a326a!2z0KLQtdGF0L3QuNGH0LrQuCDRhNCw0LrRg9C70YLQtdGCIOKAntCc0LjRhdCw0ZjQu9C-INCf0YPQv9C40L3igJw!5e0!3m2!1ssr!2srs!4v1679309498339!5m2!1ssr!2srs"
+    ></iframe>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 ChocoLand. Sva prava zadržana.</p>
+    <button id="menjaj-temu">Menjaj temu</button>
+  </footer>
+  
+
+  <script src="slajder.js"></script>
+  <script src="hamburger.js"></script>
+  <script src="validacija.js"></script>
+  <script src="tema.js"></script>
+  <script src="font.js"></script>
+</body>
+</html>  

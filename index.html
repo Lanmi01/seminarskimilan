@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChocoLand — Početna</title>
+  <meta name="description" content="ChocoLand nudi najkvalitetnije čokolade: tamna, mlečna, bela, sa lešnikom, bademom, narandžom, karamelom i još mnogo toga.">
+  <meta name="keywords" content="čokolada, tamna čokolada, mlečna čokolada, bela čokolada, lešnik, badem, karamel, ChocoLand">
+  <meta name="author" content="Milan Momić">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="slike/logo.png" alt="Logo" class="logo-img">
+      ChocoLand
+    </div>
+
+    <div id="hamburger-meni" class="hamburger" aria-label="Meni">
+      <div class="linija"></div>
+      <div class="linija"></div>
+      <div class="linija"></div>
+    </div>
+
+    <nav id="navigacijaa" class="navigacija">
+      <ul>
+        <li><a href="index.html" >Početna</a></li>
+        <li class="padajuci-meni">
+        <a href="proizvodi.html">Proizvodi ▾</a>
+        <div class="pad-meni">
+          <a href="choco-tamna70.html">Tamna 70%</a>
+          <a href="choco-mlecna.html">Mlečna</a>
+          <a href="choco-bela.html">Bela</a>
+          <a href="choco-lesnik.html">Lešnik</a>
+          <a href="choco-badem.html">Badem</a>
+          <a href="choco-narandza.html">Narandža</a>
+          <a href="choco-keks.html">Sa keksom</a>
+          <a href="choco-malina.html">Malina</a>
+          <a href="choco-dubai.html">Dubai</a>
+          <a href="choco-karamela.html">Karemela</a>
+        </div>
+      </li>
+        <li><a href="onama.html">O nama</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <div class="kontrole">
+      <button onclick="changeFontSize(-2)">A-</button>
+      <button onclick="changeFontSize(2)">A+</button>
+    </div>
+
+  </header>
+
+  <main>
+    <!-- SLIDER -->
+    <div class="slajd-kontejner">
+      <img id="slajd" src="slike/new1.jpg" alt="Slider image">
+    </div>
+
+    <!-- NAJPRODAVANIJE -->
+    <section class="novo" id="novo">
+      <div class="naslov">
+        <h2>Najprodavanije čokolade</h2>
+      </div>
+
+      <div class="novi-kontejner">
+        <div class="kontejner">
+          <div class="kontejner-slika">
+            <img src="slike/new1.jpg" alt="Crna čokolada">
+          </div>
+          <div class="cena">
+            <h3>Crna čokolada</h3>
+          </div>
+          <span>350 rsd</span>
+        </div>
+
+        <div class="kontejner">
+          <div class="kontejner-slika">
+            <img src="slike/new2.jpg" alt="Bela čokolada">
+          </div>
+          <div class="cena">
+            <h3>Bela čokolada</h3>
+          </div>
+          <span>300 rsd</span>
+        </div>
+
+        <div class="kontejner">
+          <div class="kontejner-slika">
+            <img src="slike/new3.jpg" alt="Mlečna čokolada">
+          </div>
+          <div class="cena">
+            <h3>Mlečna čokolada</h3>
+          </div>
+          <span>400 rsd</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERI -->
+    <section class="partneri" id="partneri">
+      <div class="naslov">
+        <h2>Naši partneri</h2>
+      </div>
+      <div class="kontejner-partneri">
+        <img src="slike/Google.png" alt="Google">
+        <img src="slike/amazon.png" alt="Amazon">
+        <img src="slike/starbucks.png" alt="Starbucks">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 ChocoLand. Sva prava zadržana.</p>
+    <button id="menjaj-temu">Menjaj temu</button>
+  </footer>
+
+  <!-- Eksterni JavaScript fajlovi -->
+  <script src="slajder.js"></script>
+  <script src="hamburger.js"></script>
+  <script src="tema.js"></script>
+  <script src="font.js"></script>
+
+
+</body>
+</html>
